@@ -289,6 +289,29 @@
   .stop .name{ color:var(--ink); }
   .stop .note{ color:var(--ink-soft); font-size:0.85rem; text-align:right; white-space:nowrap; }
 
+  /* ---------- Route stop detail (time + venue + address) ---------- */
+  .stop-name{
+    font-family:"Noto Serif TC",serif;
+    font-weight:700;
+    color:var(--ink);
+    font-size:0.98rem;
+  }
+  .stop-addr{
+    display:block;
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+    margin:0.15rem 0 0.35rem;
+  }
+  .route-head{
+    font-family:"Noto Serif TC",serif;
+    font-weight:700;
+    font-size:1rem;
+    color:var(--moss);
+    margin-bottom:0.3rem;
+  }
+  .route-sub{ font-size:0.85rem; color:var(--ink-soft); margin-bottom:1.2rem; }
+
   /* ---------- Pull quote (why) ---------- */
   .pull{
     font-family:"Noto Serif TC",serif;
@@ -420,31 +443,77 @@
       </ul>
     </div>
 
-    <div class="receipt" style="margin-top:1.6rem;">
-      <div class="receipt-head">
-        <span class="stop-title">大稻埕走讀路線</span>
-        <span class="stop-count">約 2.5 小時・6 站</span>
+    <div style="margin-top:1.8rem;">
+      <div class="route-head">大稻埕走讀路線（週六版）</div>
+      <div class="route-sub">集合：09:00　賣麵炎仔門口（捷運大橋頭站 1 號出口步行 7 分鐘）・步行約 2.5 公里，順時針環線——迪化街南下、延平北路北返。</div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-time">09:00</div>
+          <p><span class="stop-name">賣麵炎仔（金泉小吃店）</span><span class="stop-addr">安西街 106 號・02-2557-7087</span>早餐。〔朗讀〕〈吃麵的兆頭〉外公「攏切來」段。燒肉必點，只收現金、賣完即止。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:00</div>
+          <p><span class="stop-name">高建桶店</span><span class="stop-addr">迪化街一段 204 號・02-2557-3604</span>〔朗讀〕菜籃手袋段。共同任務——每人買一只手編小籃，裝今日買的茶點。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:20</div>
+          <p><span class="stop-name">勝豐食品行</span><span class="stop-addr">迪化街一段 154 號・02-2553-0541</span>街區最老街屋之一，從未翻修。關廟麵極細到極粗，手寫鐵招牌好拍。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">10:45</div>
+          <p><span class="stop-name">生記藥行</span><span class="stop-addr">迪化街一段 60 號・02-2556-4920</span>〔朗讀〕「本格派」拆藥仔段。買一枚滷包，看師傅開藥櫃現秤現包。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">11:05</div>
+          <p><span class="stop-name">滋生青草店</span><span class="stop-addr">民樂街（近 8 號）・02-2555-7797</span>〔朗讀〕民樂街兩家青草店的辨認法。喝不了苦茶的人改點茅根。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">11:25</div>
+          <p><span class="stop-name">永樂市場・林良號潤餅</span><span class="stop-addr">迪化街一段 21 號 1506 攤・02-2558-3562</span>〔朗讀〕「古老節奏與時光之詩」抹餅皮段。十三點收攤——全天唯一硬時限。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">12:10</div>
+          <p><span class="stop-name">義美</span><span class="stop-addr">延平北路二段 29 號・02-2556-9211</span>外婆的粽子都在這裡買，對她是老街坊而非連鎖品牌。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">12:20</div>
+          <p><span class="stop-name">十字軒糕餅鋪</span><span class="stop-addr">延平北路二段 68 號・02-2558-0989</span>日治時期老漢餅鋪，接替週六公休的龍月堂，〔朗讀〕老餅鋪與外婆同齡一段。門口壽桃塔「見本」是最好的合照點。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">12:30</div>
+          <p><span class="stop-name">加福奇士蛋糕</span><span class="stop-addr">延平北路二段 72 號・02-2555-1812</span>書中偏愛椪餅——掰碎沖花生湯。易碎，請當作全程最後一項採買。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">12:45</div>
+          <p><span class="stop-name">意麵王</span><span class="stop-addr">歸綏街 202 號・02-2553-0538</span>午餐補一輪。〔朗讀〕「紅麥布牛」通關密碼段，重點在飯後那碟刨冰。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-time">13:45</div>
+          <p><span class="stop-name">滋養豆餡舖</span><span class="stop-addr">迪化街一段 247 號・02-2553-9553</span>綜合討論，約 14:45 解散。最中內用附茶，可坐廊下慢慢談。走回大橋頭站五分鐘。</p>
+        </div>
       </div>
-      <div class="stop"><span class="n">01</span><span class="name">永樂市場・林良號潤餅</span><span class="note">近90年老店</span></div>
-      <div class="stop"><span class="n">02</span><span class="name">滋生青草號</span><span class="note">青草茶</span></div>
-      <div class="stop"><span class="n">03</span><span class="name">生記中藥行</span><span class="note">書中提及</span></div>
-      <div class="stop"><span class="n">04</span><span class="name">高建桶店</span><span class="note">百年木桶店</span></div>
-      <div class="stop"><span class="n">05</span><span class="name">賣麵炎仔（金泉小吃店）</span><span class="note">正餐落點</span></div>
-      <div class="stop"><span class="n">06</span><span class="name">滋養豆餡舖</span><span class="note">甜點收尾</span></div>
     </div>
 
-    <div class="timeline" style="margin-top:1.8rem;">
-      <div class="tl-item">
-        <div class="tl-time">聚會前</div>
-        <p>各自讀完全書，或至少讀完寫外婆、寫母親滷肉食譜的篇章。</p>
+    <div class="qgroup" style="margin-top:2rem;">
+      <div class="qgroup-title">收尾討論題（滋養豆餡舖・廊下・約 60 分鐘）</div>
+      <ul class="qlist">
+        <li>你有沒有一道食物，會讓你立刻想到某個人或某段回憶？</li>
+        <li>你覺得自己有哪些「老派」的習慣？</li>
+        <li>如果要把你小時候的一種食物或一間店留下來，你最想留下什麼？為什麼？</li>
+        <li>如果 20 年後再來一次，你希望今天看到的什麼東西還在？</li>
+        <li>洪愛珠說「老派是我的生存之道」——遭逢變故時向老輩人借靈感。這件事在你家裡是什麼樣子？</li>
+      </ul>
+    </div>
+
+    <div class="grid" style="margin-top:1.6rem;">
+      <div class="card">
+        <h3>共同任務</h3>
+        <p>在高建桶店買一只手編小籃（約 100–300 元），裝進今日的綠豆糕、椪餅與最中帶走——正是書裡的伴手禮做法。每人預算抓 800–1,000 元，其中吃喝約 300–400。</p>
       </div>
-      <div class="tl-item">
-        <div class="tl-time">走讀 2.5 小時</div>
-        <p>沿路線走 4–6 站老店，邊走邊聊書中場景與自己的記憶。</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-time">聚會 1.5 小時</div>
-        <p>找一站坐下（例如賣麵炎仔），依三個討論方向聊，最後決定下一本書。</p>
+      <div class="card">
+        <h3>本日提醒</h3>
+        <p>標〔朗讀〕的七站，四人現場輪流念，一人約兩段。龍月堂週六公休，已由十字軒接替。賣麵炎仔只收現金，燒肉與黑白切賣完即止。迪化街店家多為九點、十點開門，別比表訂時間更早到。</p>
       </div>
     </div>
   </section>
