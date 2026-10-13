@@ -154,6 +154,35 @@
     border-left:3px solid var(--indigo); padding:0.2rem 0 0.2rem 1.2rem; margin:1.4rem 0; text-wrap:balance;
   }
 
+  /* ---------- Extended reading links ---------- */
+  .readlist{ display:flex; flex-direction:column; gap:0.9rem; }
+  .readcard{
+    display:block;
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:1rem 1.2rem;
+    box-shadow:var(--card-shadow);
+    text-decoration:none;
+    color:inherit;
+  }
+  .readcard:hover{ border-color:var(--indigo); }
+  .readcard .readcard-site{
+    font-size:0.78rem;
+    letter-spacing:0.05em;
+    color:var(--brass);
+    font-weight:600;
+    margin-bottom:0.3rem;
+  }
+  .readcard .readcard-title{
+    font-family:"Noto Serif TC",serif;
+    font-weight:700;
+    font-size:1rem;
+    color:var(--ink);
+    margin-bottom:0.3rem;
+  }
+  .readcard .readcard-desc{ font-size:0.88rem; color:var(--ink-soft); }
+
   footer{ margin-top:3.5rem; padding-top:1.6rem; border-top:2px solid var(--line-strong); text-align:center; color:var(--ink-soft); font-size:0.88rem; }
   footer .cta{ font-family:"Noto Serif TC",serif; font-weight:700; color:var(--ink); font-size:1rem; margin-bottom:0.4rem; }
 
@@ -182,8 +211,31 @@
     <p class="pull">「小孩在真實世界被保護過頭，在虛擬世界卻幾乎沒人看管。」</p>
   </section>
 
+  <section id="progress">
+    <div class="sec-head"><span class="sec-num">02</span><h2>讀書進度・建議閱讀頁數</h2></div>
+    <p class="lead">全書約 480 頁（依版本印刷略有出入，請以手邊書本頁碼為準）。聚會前抓 4 週，照這個節奏讀比較不會卡在最後一週趕進度。</p>
+    <div class="grid">
+      <div class="card">
+        <h3>第 1 週</h3>
+        <p>讀到 p.120（約 1/4）</p>
+      </div>
+      <div class="card">
+        <h3>第 2 週</h3>
+        <p>讀到 p.240（約過半）</p>
+      </div>
+      <div class="card">
+        <h3>第 3 週</h3>
+        <p>讀到 p.360（約 3/4）</p>
+      </div>
+      <div class="card">
+        <h3>聚會前</h3>
+        <p>全書讀完（共 480 頁）</p>
+      </div>
+    </div>
+  </section>
+
   <section id="q1">
-    <div class="sec-head"><span class="sec-num">02</span><h2>討論方向</h2></div>
+    <div class="sec-head"><span class="sec-num">03</span><h2>討論方向</h2></div>
 
     <div class="qgroup">
       <div class="qgroup-title">方向一・童年大重構</div>
@@ -218,7 +270,7 @@
   </section>
 
   <section id="selfcheck">
-    <div class="sec-head"><span class="sec-num">03</span><h2>聚會前・自我觀察</h2></div>
+    <div class="sec-head"><span class="sec-num">04</span><h2>聚會前・自我觀察</h2></div>
     <p class="lead">這本書的內容很適合搭配一點自我測試，聚會時比對彼此的數字，會比純聊書更有感。</p>
     <div class="receipt">
       <div class="receipt-head">
@@ -232,7 +284,7 @@
   </section>
 
   <section id="flow">
-    <div class="sec-head"><span class="sec-num">04</span><h2>聚會怎麼進行</h2></div>
+    <div class="sec-head"><span class="sec-num">05</span><h2>聚會怎麼進行</h2></div>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-time">聚會前</div>
@@ -250,6 +302,23 @@
         <div class="tl-time">收尾 15 分鐘</div>
         <p>每人講一件「這週要嘗試的小調整」，下次聚會互相追蹤；決定第三本書。</p>
       </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="sec-head"><span class="sec-num">06</span><h2>延伸閱讀</h2></div>
+    <p class="lead">想多了解書裡提到「2010年」這個轉折點是怎麼來的，或是想找別人的讀後整理參考，這兩篇都不錯。</p>
+    <div class="readlist">
+      <a class="readcard" href="https://readingoutpost.com/anxious-generation/" target="_blank" rel="noopener">
+        <div class="readcard-site">readingoutpost.com・瓦基</div>
+        <div class="readcard-title">《失控的焦慮世代》讀後心得：如何拯救被手機餵養的世代？</div>
+        <div class="readcard-desc">書的重點整理，點出智慧型手機與社群媒體如何改寫童年，導致焦慮、憂鬱與社交能力下降，也整理了作者提出的改善建議。</div>
+      </a>
+      <a class="readcard" href="https://shosho.tw/blog/the-anxious-generation/" target="_blank" rel="noopener">
+        <div class="readcard-site">shosho.tw</div>
+        <div class="readcard-title">《失控的焦慮世代》：手機+社群媒體正在重塑青春期孩子的大腦！</div>
+        <div class="readcard-desc">從腦神經科學角度切入，解釋手機與社群媒體怎麼實際影響青少年大腦發展與心理健康。</div>
+      </a>
     </div>
   </section>
 
