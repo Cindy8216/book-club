@@ -61,6 +61,9 @@
   .subtitle{ color:var(--ink-soft); font-size:1rem; max-width:34em; margin:0 auto; }
   .hero-art{ margin:0 0 1.8rem; }
   .hero-art{ position:relative; }
+  .origin-video{ margin:1.4rem 0 0; }
+  .origin-video video{ display:block; width:100%; aspect-ratio:16/9; background:#1a1512; border-radius:8px; box-shadow:var(--card-shadow); }
+  .origin-video figcaption{ margin-top:0.55rem; text-align:center; font-size:0.85rem; color:var(--ink-soft); }
   .sound-btn{ position:absolute; right:10px; top:10px; display:flex; align-items:center; gap:6px; padding:7px 13px; border:0; border-radius:999px; background:rgba(43,40,34,.72); color:#fff; font:600 13px/1 system-ui,sans-serif; cursor:pointer; backdrop-filter:blur(4px); }
   .sound-btn:hover{ background:rgba(43,40,34,.88); }
   .sound-btn:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
@@ -190,6 +193,13 @@
       <div class="sec-head"><span class="sec-num">01</span><h2>為什麼辦讀書會</h2></div>
       <p class="lead">午餐時間聊的話題，很容易一直繞回同一個人、同一件事。與其這樣，不如把固定聚會的時間，換成一件會讓人期待、也真的帶得走東西的事。</p>
       <p class="pull">四人是最理想的讀書會規模——每個人都會被聽見，也容易約時間。</p>
+      <figure class="origin-video">
+        <video controls playsinline preload="metadata" poster="origin-poster.jpg">
+          <source src="origin-video.mp4" type="video/mp4">
+          你的瀏覽器無法播放影片，可以<a href="origin-video.mp4">直接下載觀看</a>。
+        </video>
+        <figcaption>讀書會的開始・2026.8.27 感恩餐會的遊覽車上（黏土動畫，約 50 秒）</figcaption>
+      </figure>
     </section>
 
     <section id="how">
